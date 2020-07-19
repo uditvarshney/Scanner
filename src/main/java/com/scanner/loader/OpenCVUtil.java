@@ -7,12 +7,14 @@ import org.opencv.imgcodecs.Imgcodecs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static org.opencv.core.CvType.CV_8UC1;
+
 public abstract class OpenCVUtil {
 
     Logger logger = LoggerFactory.getLogger(OpenCVUtil.class);
     public OpenCVUtil()
     {
-        //System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+        //System.load(Core.NATIVE_LIBRARY_NAME);
         OpenCV.loadLocally();
     }
 
